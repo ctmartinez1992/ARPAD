@@ -1,0 +1,1408 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c1c0d7e1-f301-496a-9b36-fa1d09b6c4c7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Produto</ID>
+  <Name>Produto</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="9" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1960" scrolltop="-2936" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="15028" y="16536" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Fornecedor" left="91" top="-1977" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="4683" height="10256" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004b12000010280000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimFornecedor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Produto" left="6510" top="-1877" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4048" height="10080" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d00f000060270000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimProduto" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4474" top="-1648" logicalid="8" controlid="5" masterid="0" hint1="0" hint2="0" width="2336" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimProduto_DimFornecedor_Fornecedor]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="21" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4774" y="-1249" />
+              <point x="5642" y="-1249" />
+              <point x="5642" y="-1237" />
+              <point x="6510" y="-1237" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1960</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2936</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>91</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1977</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="89cc8902-c114-4866-9e9b-d7ad0f8dbaac">
+    <DataSourceViewID>DM Mais Ritmo</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3e63b71b-7bad-47c2-9724-436e2c4859ee">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="867cbc65-4497-4c1a-a0b8-2d5fe283fad4">
+      <ID>Produto Key</ID>
+      <Name>Produto Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>55</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43783f35-5ebe-4bfd-99d5-fc3a1a4f9f07">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cc4ec4a-ca8c-40e4-86f7-a14feb6b77b3">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ProdutoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="88f9ca9a-7496-4e43-915a-e37c1252bbcf">
+          <AttributeID>Expired Time Key</AttributeID>
+          <Name>Produto - Expired Time Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e413ad6c-13bc-4593-8de5-e1b855183369">
+          <AttributeID>Effective Date Key</AttributeID>
+          <Name>Produto - Effective Date Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0cdd07bb-f44b-4946-b614-9250a9e703bb">
+          <AttributeID>Effective Time Key</AttributeID>
+          <Name>Produto - Effective Time Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="62fdff69-615e-466a-8ad6-1aaa480255cd">
+          <AttributeID>Data Criacao Key</AttributeID>
+          <Name>Produto - Data Criacao Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c60bb256-8ac0-40f1-8394-f9ecbe717234">
+          <AttributeID>Expired Date Key</AttributeID>
+          <Name>Produto - Expired Date Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="05281b03-f149-453c-9280-02676fbe73d5">
+          <AttributeID>Hora Criacao Key</AttributeID>
+          <Name>Produto - Hora Criacao Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6bb8d8a-d678-45b2-8cff-9ad757f06819">
+          <AttributeID>Data Abertura Key</AttributeID>
+          <Name>Data Abertura Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d250e27-ea9e-4497-a766-93e836ca0d4e">
+          <AttributeID>Fornecedor Key</AttributeID>
+          <Name>Fornecedor Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d00e2233-1025-4c40-9d37-7aa21f2b7ca2">
+          <AttributeID>Fornecedor Id</AttributeID>
+          <Name>Fornecedor Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="29b23f11-1b31-45bb-b7f2-68cf21a31c90">
+          <AttributeID>Produto Id</AttributeID>
+          <Name>Produto Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06fc6155-ccf6-4b83-9dfa-5507a08bbdc0">
+          <AttributeID>Familia Id</AttributeID>
+          <Name>Familia Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4e186c96-4e26-42b2-8ecd-040c112a6efc">
+          <AttributeID>Nome</AttributeID>
+          <Name>Nome Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8542216-15b4-4d63-b7df-55c8a36fe8c2">
+          <AttributeID>Contacto</AttributeID>
+          <Name>Contato Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee253c51-2496-4b10-9a11-3da1dc8edb9b">
+          <AttributeID>Funcao Contacto</AttributeID>
+          <Name>Funcao Contato Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c6ea131-935f-4bcb-b33b-043c982c8b32">
+          <AttributeID>Classe</AttributeID>
+          <Name>Classe Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c06d1153-c6f2-4b0f-a5f1-7a86f2301958">
+          <AttributeID>Nacionalidade</AttributeID>
+          <Name>Nacionalidade Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="67af9013-e9c7-4ca0-a5af-da3fa5a02496">
+          <AttributeID>Morada</AttributeID>
+          <Name>Morada Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="21c520c5-aa30-4d82-ba62-b1eb885c6224">
+          <AttributeID>Localidade</AttributeID>
+          <Name>Localidade Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0de03368-80a2-4cf0-810d-b2c8e6e64204">
+          <AttributeID>Codigo Postal</AttributeID>
+          <Name>Codigo Postal Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d15d2ec9-820f-489d-9bd7-33a919842bfe">
+          <AttributeID>Email</AttributeID>
+          <Name>Email Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c79c77c-ef0f-405a-a8a4-6c3d068c1547">
+          <AttributeID>Telefone</AttributeID>
+          <Name>Telefone Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="327544ab-da1b-4e4d-bf3b-24b288ca1151">
+          <AttributeID>Telemovel</AttributeID>
+          <Name>Telemovel Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9980538a-3e81-42c9-9b08-990de9026235">
+          <AttributeID>Fax</AttributeID>
+          <Name>Fax Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="098f6d7f-0744-4f4e-b7b8-67d7a646dde5">
+          <AttributeID>Numero Contribuinte</AttributeID>
+          <Name>Numero Contribuinte Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c0309970-9143-4281-9827-6becbb89829e">
+          <AttributeID>Centro Custo</AttributeID>
+          <Name>Centro Custo Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6fb72541-51cc-439e-9c06-d840b2d24143">
+          <AttributeID>Saldo</AttributeID>
+          <Name>Saldo Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6322705c-0521-48aa-a11e-8c74cfb390e3">
+          <AttributeID>Vencimento</AttributeID>
+          <Name>Vencimento Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d03be4a-17c1-4ab1-981d-156cfc37be3b">
+          <AttributeID>Plafond</AttributeID>
+          <Name>Plafond Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb287467-1d84-4cf0-a01a-0d1337fe7fb1">
+          <AttributeID>Desconto</AttributeID>
+          <Name>Desconto Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3ffadd7-1b4c-46a0-9063-6ac3b8f27351">
+          <AttributeID>Desconto Pronto Pagamento</AttributeID>
+          <Name>Desconto Pronto Pagamento Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="14d8c524-307d-4b65-b6b2-8aafe2e150d4">
+          <AttributeID>Taxa Iva</AttributeID>
+          <Name>Taxa Iva Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="647596a3-8547-4247-b42d-350a8a288eb6">
+          <AttributeID>Tipo</AttributeID>
+          <Name>Tipo Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0472176c-39ce-4dd0-ad90-b574c0deb55c">
+          <AttributeID>Is Current</AttributeID>
+          <Name>Is Current Fornecedor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e2d8052-835c-4d81-8eba-ea6a8b5f24a3">
+          <AttributeID>Descricao Produto</AttributeID>
+          <Name>Descricao Produto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="320300ba-3d8b-4dd8-a9b6-2e56c0d1f4ae">
+          <AttributeID>Descricao Familia</AttributeID>
+          <Name>Descricao Familia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ae0f1f9-611c-4aa7-9c55-50b666a1f7c4">
+          <AttributeID>Categoria Produto</AttributeID>
+          <Name>Categoria Produto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="caab1abf-31d6-44a0-8f3f-4ebe46b64c4a">
+          <AttributeID>Categoria Familia</AttributeID>
+          <Name>Categoria Familia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc37a3f7-c458-4766-abb4-09c9f3b80558">
+          <AttributeID>Classificacao Produto</AttributeID>
+          <Name>Classificacao Produto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27df2050-a280-4604-9ab8-992034ed2f26">
+          <AttributeID>Classificacao Familia</AttributeID>
+          <Name>Classificacao Familia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="913f62f6-8a6a-42f5-8d69-a8ef9e693c79">
+          <AttributeID>Stock Inicial</AttributeID>
+          <Name>Stock Inicial</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2646b8dc-4efe-401b-8871-6055fc6f811f">
+          <AttributeID>Stock Maximo</AttributeID>
+          <Name>Stock Maximo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="60391e93-17e6-4e32-9122-b5506ab53752">
+          <AttributeID>Stock Minimo</AttributeID>
+          <Name>Stock Minimo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ffe340cb-4de4-47a2-857f-aa6ef06f492c">
+          <AttributeID>Margem1</AttributeID>
+          <Name>Margem1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="21ca24ac-d27c-457e-bf4c-9b1afd7bb011">
+          <AttributeID>Margem2</AttributeID>
+          <Name>Margem2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f0746dd-b451-4fee-aec9-cd6abe10f42a">
+          <AttributeID>Margem3</AttributeID>
+          <Name>Margem3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8fd7ab8f-0a1f-494a-84e4-ff31eb78650e">
+          <AttributeID>Margem4</AttributeID>
+          <Name>Margem4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="506f064c-c460-483e-94f9-95fc43b0316e">
+          <AttributeID>Margem5</AttributeID>
+          <Name>Margem5</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc05789c-f129-465e-9846-84e7633004b8">
+          <AttributeID>Preco Venda</AttributeID>
+          <Name>Preco Venda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="169dfa54-8d86-481d-bf68-cb04ab83adba">
+          <AttributeID>Preco Custo</AttributeID>
+          <Name>Preco Custo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="83eee97e-897f-4c12-b24b-1e643781084d">
+          <AttributeID>Preco Custo Ponderado</AttributeID>
+          <Name>Preco Custo Ponderado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="580ffde0-f850-42d8-a1dc-719c1b6ee922">
+          <AttributeID>Ultimo Preco Custo</AttributeID>
+          <Name>Ultimo Preco Custo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="66aa71ca-10d2-4d46-a1ce-c406334cdc80">
+          <AttributeID>Ultimo Preco Venda</AttributeID>
+          <Name>Ultimo Preco Venda</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43046174-f212-4ccb-a406-1e18d2d30842">
+          <AttributeID>Quantidade Cativa</AttributeID>
+          <Name>Quantidade Cativa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94943851-e6d4-4afc-9c12-b90882aa7ca2">
+          <AttributeID>Taxa IVA 1</AttributeID>
+          <Name>Taxa Iva Produto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d943e58e-5f90-4517-98eb-f9728337eee1">
+          <AttributeID>Ponto Encomenda</AttributeID>
+          <Name>Ponto Encomenda Produto</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="497ec1cc-f111-4be8-94af-86b3bed69b2b">
+          <AttributeID>Is Current 1</AttributeID>
+          <Name>Is Current Produto</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="20e85a24-365c-4c01-9314-076b0ff757ff">
+      <ID>Expired Time Key</ID>
+      <Name>Produto - Expired Time Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8bececc9-6a7a-4eb2-95fc-3109c1044fca">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f770ed14-1838-4d6b-9d41-81ef04dd6f58">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ExpiredTimeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="add5ca97-da8b-45ce-8531-e80dfceb6222">
+      <ID>Effective Date Key</ID>
+      <Name>Produto - Effective Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f8c94a6-a29b-4cee-940c-63f4f358c297">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bfa26477-5ce3-441c-ab9a-3ab20a7d8d29">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>EffectiveDateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e2287ee-dad4-4f1d-9e43-616e4800d276">
+      <ID>Effective Time Key</ID>
+      <Name>Produto - Effective Time Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ea0fa73-183e-4d0a-be3d-6d33fdae4ede">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b3693c2-d1f8-4d5c-87b3-82bf6d01f58a">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>EffectiveTimeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e6471747-2675-40af-8f39-70e734d83e79">
+      <ID>Data Criacao Key</ID>
+      <Name>Produto - Data Criacao Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="521bbd40-22d6-4a0d-93b4-0bae0c06087d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07ace769-f86a-4c91-b491-f3b223c96030">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>DataCriacaoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="745eb4b3-2add-4854-9fc5-4b5623755f4f">
+      <ID>Expired Date Key</ID>
+      <Name>Produto - Expired Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b7676cd-9ba2-47c3-b141-1d3742f0aa7c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76d301de-0ad6-48b2-8e55-a90f754b91e4">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ExpiredDateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7f8567b9-3319-4da7-a735-7ecb5944a3cf">
+      <ID>Hora Criacao Key</ID>
+      <Name>Produto - Hora Criacao Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="447afafa-1386-436b-961c-9fb050dbec67">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="296aa6f9-5678-4f07-8a10-c4c4f9d8dd00">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>HoraCriacaoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c833fa4c-d8ac-4bac-900c-11c5e16e6ab9">
+      <ID>Data Abertura Key</ID>
+      <Name>Data Abertura Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3fe4596-c049-409c-9c8e-810802e8d94a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c4f721f-6078-46bc-81b2-11b9f34bdb50">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>DataAberturaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aaffbf3d-f85b-442a-80ff-16624e2a7b87">
+      <ID>Fornecedor Key</ID>
+      <Name>Fornecedor Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04f9011e-9d21-4e39-8f03-45da360658bb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d7db9c4-9925-4f4b-85de-a9539436376f">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>FornecedorKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f8a09d28-443b-4b2a-8b8d-8de6feebe45b">
+          <AttributeID>Fornecedor - Effective Date Key</AttributeID>
+          <Name>Fornecedor - Effective Date Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa85e172-c22b-4436-b177-81552f595fab">
+          <AttributeID>Moeda Key</AttributeID>
+          <Name>Moeda Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b2e8da84-e04d-4267-8171-c4802dccb617">
+          <AttributeID>Fornecedor - Effective Time Key</AttributeID>
+          <Name>Fornecedor - Effective Time Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a39e48c-00d5-43d5-9b2f-0501ac9f7500">
+          <AttributeID>Fornecedor - Expired Date Key</AttributeID>
+          <Name>Fornecedor - Expired Date Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4106d159-f46e-46b5-879b-40637466e013">
+          <AttributeID>Fornecedor - Expired Time Key</AttributeID>
+          <Name>Fornecedor - Expired Time Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="acd63b9c-1b90-4586-9baa-4a76863f3c39">
+          <AttributeID>Fornecedor - Hora Criacao Key</AttributeID>
+          <Name>Fornecedor - Hora Criacao Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5197bb7a-a9b7-4003-879a-655862728063">
+          <AttributeID>Zona Key</AttributeID>
+          <Name>Zona Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f4c9757-b84f-48c3-b487-51c903c32b06">
+          <AttributeID>Fornecedor - Data Criacao Key</AttributeID>
+          <Name>Fornecedor - Data Criacao Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="053b7e88-0352-421e-bf4f-a9eccb334864">
+      <ID>Fornecedor - Effective Date Key</ID>
+      <Name>Fornecedor - Effective Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9f11961-f03d-4fc1-89c2-9c3ce221801a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2fb91736-d4bb-476c-a885-996a17297cd3">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>EffectiveDateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eb242289-7bdb-4a34-a438-b59e95dd8a73">
+      <ID>Moeda Key</ID>
+      <Name>Moeda Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8fe181ae-043c-411a-84af-1fbed4e306b6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d10810a-7e45-4ea3-bb9c-64e3149ce650">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>MoedaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8e46c12-c603-4545-b4b4-6a76d047454a">
+      <ID>Fornecedor - Effective Time Key</ID>
+      <Name>Fornecedor - Effective Time Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e754f3a-2e5e-4893-bde8-17ddb0cc8fbb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f4b5220-4c36-4f3d-88cd-4beb220870d3">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>EffectiveTimeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b047b8c7-3048-4136-b97b-41ccfa2b4344">
+      <ID>Fornecedor - Expired Date Key</ID>
+      <Name>Fornecedor - Expired Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c3ad894-4a6a-44cb-b4c4-b8935b6797fe">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a4644870-57b3-4975-972e-ee8076e6bde8">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>ExpiredDateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a72d583-c080-4944-86da-dff2bfb7e6c1">
+      <ID>Fornecedor - Expired Time Key</ID>
+      <Name>Fornecedor - Expired Time Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f797e86-d5f8-4b91-9ca9-1ecdb966f2ba">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="260f34e1-c0f3-4258-81ec-86bc2d3003ad">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>ExpiredTimeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="37ee7761-ed38-405b-a63b-0cd82610da45">
+      <ID>Fornecedor - Hora Criacao Key</ID>
+      <Name>Fornecedor - Hora Criacao Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="590cba99-2f87-4d5f-97e6-506c32a5f79a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1dcff352-a9f6-4e3a-921a-768d2b08c7bb">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>HoraCriacaoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ca08b77-2691-4984-b676-41b7415ea35b">
+      <ID>Zona Key</ID>
+      <Name>Zona Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3306c3e-f9b9-48c9-a697-17d82af7ba91">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="416c34e2-136c-4fc8-808e-97f7173d2639">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>ZonaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9590506a-dbae-4228-acb9-9694283c7e90">
+      <ID>Fornecedor - Data Criacao Key</ID>
+      <Name>Fornecedor - Data Criacao Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ad8ec17-3832-4593-b9b7-76497030ab05">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8896ec1-e680-4951-b28e-c663affd788a">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>DataCriacaoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e37a5d9-9f93-42a5-a2d4-a253ca4d743e">
+      <ID>Fornecedor Id</ID>
+      <Name>Fornecedor Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48b36bac-9f50-49bd-aa31-b433a54f97f1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="964ed947-bd7e-4e16-921c-a828e907f755">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>FornecedorId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49f62cc3-acf3-4f73-afab-c0981cc16582">
+      <ID>Produto Id</ID>
+      <Name>Produto Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e421cd0-12c8-4fdb-882c-c08883f1b2a6">
+          <DataType>WChar</DataType>
+          <DataSize>18</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="294ef86e-e2e1-461a-8d09-d01fb2b8d4ee">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ProdutoId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="be6a33ff-a7cb-4507-87ff-4591b4616f6e">
+      <ID>Familia Id</ID>
+      <Name>Familia Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="79450779-c730-4d31-8794-9b9dd7b1afa6">
+          <DataType>WChar</DataType>
+          <DataSize>18</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f092648-efc1-4c9c-b0be-a4b963649b19">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>FamiliaId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8c7c2e2c-eb39-42a0-a331-3122f8b1cd01">
+      <ID>Nome</ID>
+      <Name>Nome Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ac52ec8-e937-4eff-94b5-4f01b70ab10a">
+          <DataType>WChar</DataType>
+          <DataSize>55</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb7ed430-88b1-4e7c-81f8-bb0f421040f6">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Nome</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="97b68946-012f-44ae-b511-eb996dafeee2">
+      <ID>Contacto</ID>
+      <Name>Contato Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="febf06b5-6d7b-4995-92cf-f6bda1ed90a6">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="371a99f1-840b-42be-8617-1c11218bcda8">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Contacto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="838339c0-69f4-4986-8b4f-31ce607a45cb">
+      <ID>Funcao Contacto</ID>
+      <Name>Funcao Contato Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4330092b-3c0d-405c-9239-1e2a6c69cec6">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2793cc0c-909a-4e9b-abbe-3c5d79fbcb67">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>FuncaoContacto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f3ea6121-1730-4dfc-852c-a9f94b78570a">
+      <ID>Classe</ID>
+      <Name>Classe Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f415e22-3f5a-407c-a37c-971567901a88">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5d4fcba-b9f4-43c4-be08-9f690c63a302">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Classe</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b179423d-980d-4106-a3ec-770d8ebce434">
+      <ID>Nacionalidade</ID>
+      <Name>Nacionalidade Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2d71e75-0a47-4fec-8e7f-de5fa7b55606">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0916ea27-cdf3-49c2-b516-98e77eb71835">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Nacionalidade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="635b1070-99e0-4060-8eaf-dcd9fd490c1d">
+      <ID>Morada</ID>
+      <Name>Morada Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="624ac12b-9572-4a8b-8d2b-ac1de227602e">
+          <DataType>WChar</DataType>
+          <DataSize>55</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="efe07b2d-a3d9-4c8d-9ffa-264f0ccaf855">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Morada</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6bca6e3c-a308-4100-af65-90e54f7bd5e4">
+      <ID>Localidade</ID>
+      <Name>Localidade Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d8ed9ef-fbee-4e91-8e91-043c8d942351">
+          <DataType>WChar</DataType>
+          <DataSize>43</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9405546e-8966-463e-8c85-7c698ff4daae">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Localidade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9cf3061f-17ef-4cca-94be-04425371e911">
+      <ID>Codigo Postal</ID>
+      <Name>Codigo Postal Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f40cd48a-3db1-4ae4-b938-38b65f31a7f4">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="200ef352-5bce-46cb-97f2-5940a37fe955">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>CodigoPostal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2071f23b-5818-410b-ab7c-2773507dd5e5">
+      <ID>Email</ID>
+      <Name>Email Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9864ccac-3101-47b0-851d-7f830aad5a35">
+          <DataType>WChar</DataType>
+          <DataSize>45</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="465f4f55-2b93-4167-8a3c-5273847afddd">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Email</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fb12c06-7264-4c80-bd15-54e5179a13b6">
+      <ID>Telefone</ID>
+      <Name>Telefone Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17c2ea19-67cc-4895-9e3c-b0247d63dedf">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62be5751-b576-41d6-93d5-c5f4f9f2f115">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Telefone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d8ca4a9-ccf9-4ea6-b881-988b9ef9178a">
+      <ID>Telemovel</ID>
+      <Name>Telemovel Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="138c239d-2ef9-440c-80b9-ce1f14488532">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="373b0d8b-086d-4e8d-a7af-18b77320fc6c">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Telemovel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="be2f3400-f60c-4a33-941a-7af4a2e61c55">
+      <ID>Fax</ID>
+      <Name>Fax Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1de286ea-4f19-424c-a1bf-3bf278713722">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b267bf1-8178-43c9-869b-6e7cad603718">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Fax</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b91f38a2-436d-44f1-a472-aed13b108068">
+      <ID>Numero Contribuinte</ID>
+      <Name>Numero Contribuinte Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b256012-4be9-475f-9676-4ab2a3174072">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29ba1130-698d-4961-817e-c231cd2cc0e5">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>NumeroContribuinte</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d64ef9e6-2e0a-4ac0-a4bf-798f5ba9a788">
+      <ID>Centro Custo</ID>
+      <Name>Centro Custo Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1206fafd-16f2-48be-a480-8113123ff254">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="260aa4cd-2722-4b2c-a64f-4444f8ad7e52">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>CentroCusto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee46c6ce-2f02-4e7c-8f95-08478077c741">
+      <ID>Saldo</ID>
+      <Name>Saldo Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e7b41865-bb65-4a06-8321-811efc2e9411">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92ea5af4-2ea5-4943-a3b2-bc4f5d2c1c11">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Saldo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7d09e8b0-d590-4075-b254-67644e0f2b9f">
+      <ID>Vencimento</ID>
+      <Name>Vencimento Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60f626a5-b705-49f4-a8c8-e557a2e26be2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45c42a31-5351-4005-97d6-fd0343722b6f">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Vencimento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54b12067-0449-4d36-925c-bdfcacce34ac">
+      <ID>Plafond</ID>
+      <Name>Plafond Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a12794fc-2cd1-4768-b009-922b1b657b25">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1578c05-cc72-43aa-9794-db2e544f680c">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Plafond</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8cc7017c-253e-4bb3-89b8-d153c8ba7918">
+      <ID>Desconto</ID>
+      <Name>Desconto Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5446f7b5-2368-40b8-9852-50de89e1c548">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a739c5c-be33-49d7-818d-04af069d6d0b">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Desconto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5cd01fc2-fa8a-4555-848d-191796c7ded4">
+      <ID>Desconto Pronto Pagamento</ID>
+      <Name>Desconto Pronto Pagamento Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35d7598c-5f42-46dd-beb3-5916c3129699">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c02c1a64-5de8-4965-b527-255fdd4eab5a">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>DescontoProntoPagamento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0def0fd-02fe-4ee0-aaea-216b8ef2d0a6">
+      <ID>Taxa Iva</ID>
+      <Name>Taxa Iva Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6dbff2bf-214d-43f6-a703-dcbcc7303e05">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2d188e8-084e-422c-bfaa-2e7f9f53c594">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>TaxaIva</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a3806f40-f2d8-4e2b-84d9-3efcc38b25e1">
+      <ID>Tipo</ID>
+      <Name>Tipo Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da73ad3f-735d-4a7a-b6c4-4f61bcb6b89e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8736c1fa-4e0c-4c44-9faa-d5705ed3ae4e">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>Tipo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef49ddf7-8f31-4f40-9bc5-ec6a35a03443">
+      <ID>Is Current</ID>
+      <Name>Is Current Fornecedor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="145a4da6-3a06-4e5e-aedd-c499edf6cb48">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2470c8cb-1408-49b1-9812-91fcdb8747af">
+            <TableID>dbo_DimFornecedor</TableID>
+            <ColumnID>IsCurrent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a96d4e97-c8e4-45ed-a111-3988f3c79d67">
+      <ID>Descricao Produto</ID>
+      <Name>Descricao Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7774787d-b71f-4028-ac17-1fa453d44a0e">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a05c783c-a4c0-4b6b-bb28-536ff6857086">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>DescricaoProduto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d437a0c8-e99d-4de0-bd52-34085aa302aa">
+      <ID>Descricao Familia</ID>
+      <Name>Descricao Familia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e6ad210-8dd4-4af7-adad-7c6d7cb7835b">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3401a44-0419-4b61-aaa7-e619b22526f2">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>DescricaoFamilia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a820f836-e649-4366-a589-ec17db358d8e">
+      <ID>Categoria Produto</ID>
+      <Name>Categoria Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0a1d562-71f4-4e73-8d4d-c327e25aa539">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7407e3c-d1f3-43aa-9759-e458acf03e80">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>CategoriaProduto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1722937f-1991-4ce6-a24c-fb7ce2bbea2d">
+      <ID>Categoria Familia</ID>
+      <Name>Categoria Familia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82bd08b5-4a08-46d7-a040-f8953ce4f2d3">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d47b48f-cea2-4ff0-9f3a-f59261fcc0b2">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>CategoriaFamilia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="308acf1f-572a-4985-9f87-9db896d94b06">
+      <ID>Classificacao Produto</ID>
+      <Name>Classificacao Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12b2d77f-353b-4deb-8831-1e8e17eb0a0f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="088df6cb-3729-406b-ae7f-250c6215b328">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ClassificacaoProduto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="82e4bc2c-deea-4be7-850e-bf3ea10d591c">
+      <ID>Classificacao Familia</ID>
+      <Name>Classificacao Familia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0415655a-b3f8-42ef-a0e2-ee1c796ef110">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c73a61d-0600-4b63-b577-9f9e5bdd621c">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>ClassificacaoFamilia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61406ad8-97be-43a1-bd15-3bc871f62b92">
+      <ID>Stock Inicial</ID>
+      <Name>Stock Inicial</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7bee90f6-03c1-45f5-895c-44cc3280f202">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e346f12b-b24d-448f-b841-7c8c26579add">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>StockInicial</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="262cd053-54e5-401c-b4ae-db2782458591">
+      <ID>Stock Maximo</ID>
+      <Name>Stock Maximo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13a78794-a8c4-4a8c-95c9-f8ac4155ba4f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="038b5bbe-80d6-4ee5-88a4-ca848217f939">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>StockMaximo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ed818f7c-20fa-42e1-a3b9-0ce164d25bfb">
+      <ID>Stock Minimo</ID>
+      <Name>Stock Minimo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb839575-50d6-48c5-8eb3-723168c05b4c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de6bff50-9550-42e3-be12-0dfd1ee8c8aa">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>StockMinimo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53edce9d-bc2a-4824-b033-e5ebb6d8556e">
+      <ID>Margem1</ID>
+      <Name>Margem1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83f80eee-3413-4236-87ca-450d91d82d22">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4640e45c-0911-4bb6-8387-bc82c8de0fac">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>Margem1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26972f80-454a-4ba4-bc85-700b19256f00">
+      <ID>Margem2</ID>
+      <Name>Margem2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5648d801-123e-42ad-97a0-2b58dd7b02cc">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7fba72a8-dc7b-4138-82c0-b471ad3b172f">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>Margem2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ebf1e9b-98f8-4042-aa98-8397d6574d5d">
+      <ID>Margem3</ID>
+      <Name>Margem3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="50214f5a-b7c3-4457-bf2e-9f4cf1350685">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53a37104-507e-4494-8cf0-34d995c901c1">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>Margem3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0778f32b-7ecf-4634-a46c-203ee187ff15">
+      <ID>Margem4</ID>
+      <Name>Margem4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ab102585-fe78-4040-9a1b-0f56bf55b29d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a06f4a50-4ea0-4306-98b1-5451d58a315c">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>Margem4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b2faaaa6-2548-47ed-b65f-a17a601e4f99">
+      <ID>Margem5</ID>
+      <Name>Margem5</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc220d58-60bd-4fc4-ac47-cc0bc2913a95">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8c4a953-2476-4a2d-b72a-b1ae87b4d395">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>Margem5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79efc00e-8502-46c9-b307-4c5a76d3f062">
+      <ID>Preco Venda</ID>
+      <Name>Preco Venda</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a1d7c1f-127a-4d8d-981a-4877deef5a14">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e7182a0-18f3-4097-8102-4b3226a84e88">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>PrecoVenda</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="60c1ed9f-ffe9-498c-b2b0-212a53bf82ff">
+      <ID>Preco Custo</ID>
+      <Name>Preco Custo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2da1bf0d-a1c7-4e48-b580-3370b90d92a7">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4845212b-eab4-4196-980e-f43c5940fa5d">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>PrecoCusto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9eb2f991-08ad-4581-a653-623b0314e04d">
+      <ID>Preco Custo Ponderado</ID>
+      <Name>Preco Custo Ponderado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="38674bdc-ad8b-43f0-862d-9d5177c43539">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0b27c18-3f20-41cf-9e9b-d9f2a071f6fa">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>PrecoCustoPonderado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a87bdc84-5f11-44cd-8ad8-c8042d594634">
+      <ID>Ultimo Preco Custo</ID>
+      <Name>Ultimo Preco Custo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="677f6337-6d60-4152-9a5d-3e85978343aa">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="60c67f3b-0ae9-475a-b56c-ab7341b56521">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>UltimoPrecoCusto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="94475dfb-47d9-433f-b474-1300bc8d9cc2">
+      <ID>Ultimo Preco Venda</ID>
+      <Name>Ultimo Preco Venda</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b8e2780-71a1-432d-804e-46a3817eb744">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41a9b767-152e-4f0c-a2d5-399ef695cb5c">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>UltimoPrecoVenda</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6f7698c1-12ab-4145-b259-4313cb8c23e9">
+      <ID>Quantidade Cativa</ID>
+      <Name>Quantidade Cativa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8181d7c1-99b6-4e6c-b571-406d01dd1b5e">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5233751-b96c-4a83-9583-cd1744e0825d">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>QuantidadeCativa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ef6a002-b5c1-4d4c-9301-c61655fa4a36">
+      <ID>Taxa IVA 1</ID>
+      <Name>Taxa Iva Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a59ab236-846c-4213-b612-eec9921efa5f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a14efd3c-e809-4828-b57c-2ba5f1a10e19">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>TaxaIVA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="335b11af-afa9-4aed-976f-63e12a03c9bc">
+      <ID>Ponto Encomenda</ID>
+      <Name>Ponto Encomenda Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e052cf9c-25e8-4fbf-b300-ca6893348232">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="074a6fcb-36b3-4cdd-ad5b-9271f9ac488f">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>PontoEncomenda</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="020eb68c-a038-4497-adf8-ab5f04b9e2ed">
+      <ID>Is Current 1</ID>
+      <Name>Is Current Produto</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afa8a945-95a6-4842-89c4-3954512af96e">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6ba61a1-5d66-4019-89ce-53f3019fa31d">
+            <TableID>dbo_DimProduto</TableID>
+            <ColumnID>IsCurrent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

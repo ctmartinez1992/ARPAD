@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Analysis Services</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>bx3f19AYvHTrhEeNCN20BbCZAn0=01-01-2015 17:07:2908-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>DM Mais Ritmo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>YbSlPLE9mYjxQaStI47P1w5Zs9k=08-01-2015 18:42:0608-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>DM Mais Ritmo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9WlQA0/XqLhqHjzvPtQ08o3jvv8=05-01-2015 17:49:4508-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Funcionario</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oNe82kaXPf4j7PIn+OZuiSPg614=05-01-2015 17:49:4608-01-2015 19:24:56</TimeStamp>
+        <ID>
+          <String>Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QnI+MjwyCePuznad9SsLg1GXFuI=05-01-2015 17:49:4608-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Moeda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>O7y0NargcmTLz9pnCg7whqXuFqs=07-01-2015 14:08:3508-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Junk Faturacao</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MDdftwUg9Zo8iDhFXYaAqWatBCM=05-01-2015 17:49:4708-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Zona</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7KxaxxbZRvbp7ZeLOJpg+dTge4M=06-01-2015 13:39:4608-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Produto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hcT59Y+0btZLlGAr9hLXqcso1rM=01-01-2015 17:52:1708-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jpS6IA+cvKVvpm8kr+oH5B4xpLk=05-01-2015 18:56:5708-01-2015 19:24:56</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zkkwODxbTztO1Eo3RjsMxny7XR8=08-01-2015 18:36:3708-01-2015 19:24:56</TimeStamp>
+        <ID>
+          <String>Dim Date Mes</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>7I6IbMbbwUo4DFnzCjbxdE7nfBU=08-01-2015 18:51:1808-01-2015 19:24:560enDqtJkX/sN9xygk+1VIY5+xxk=08-01-2015 18:44:1008-01-2015 19:24:57</TimeStamp>
+        <ID>
+          <String>DM Mais Ritmo</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>QVZNtAa/i9hplpmEXxcR9vNqeKU=30-12-2014 11:40:5608-01-2015 19:24:56</TimeStamp>
+      <ID>
+        <String>Analysis Services</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2015-01-08T19:30:22.226667Z</LastDeployed>
+</DeploymentSnapshot>

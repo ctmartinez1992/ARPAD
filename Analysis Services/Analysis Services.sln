@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Analysis Services", "Analysis Services\Analysis Services.dwproj", "{4DF7B399-85E1-4C9D-9856-FC89B7B38C5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DF7B399-85E1-4C9D-9856-FC89B7B38C5C}.Development|Default.ActiveCfg = Development
+		{4DF7B399-85E1-4C9D-9856-FC89B7B38C5C}.Development|Default.Build.0 = Development
+		{4DF7B399-85E1-4C9D-9856-FC89B7B38C5C}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

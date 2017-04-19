@@ -1,0 +1,242 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8a58a943-f23f-4f41-add7-b9b086d118a7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Junk Faturacao</ID>
+  <Name>Junk Faturacao</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1396" scrolltop="-2236" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5768" y="8916" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="JunkFaturacao" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000430e00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_JunkDimFaturacao" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1396</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2236</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3204d102-e522-489c-985f-dbddc1dc3b89">
+    <DataSourceViewID>DM Mais Ritmo</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="171d496a-1b26-4b8a-b03a-34e0483e1e5d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d942b1ff-9176-46f1-a8d3-b3f54317aa2f">
+      <ID>Junk Faturacao Key</ID>
+      <Name>Junk Faturacao Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>96</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2bfa9dfd-7de7-46fd-b7ae-8bc0296bc235">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b8d7126-88ac-4a4b-a9a7-8fc9ae59d8f5">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>JunkFaturacaoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a887218b-a0d9-46ce-99d2-b233b9405fbc">
+          <AttributeID>Numero Documento</AttributeID>
+          <Name>Numero Documento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="61f6076a-0124-4487-a3bd-46bf2c670a11">
+          <AttributeID>Nome Documento</AttributeID>
+          <Name>Nome Documento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c1d7e68b-e3a1-42f0-a2a2-f6d49c1e30dd">
+          <AttributeID>L Ordem</AttributeID>
+          <Name>LOrdem</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eca393a4-41ed-4c14-bad4-8eec28f36c50">
+          <AttributeID>Centro Custo</AttributeID>
+          <Name>Centro Custo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f0990f79-f4e8-4b90-be8a-00e56757fe28">
+          <AttributeID>Segmento</AttributeID>
+          <Name>Segmento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4252698e-8879-4930-bbab-75c8fc9ee99e">
+          <AttributeID>Tipo</AttributeID>
+          <Name>Tipo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4eac0c9d-33c8-448f-9faf-81ae3402f980">
+          <AttributeID>Armazem</AttributeID>
+          <Name>Armazem</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="afc7b45d-b9f3-43ba-8c73-a5aa466b7813">
+      <ID>Numero Documento</ID>
+      <Name>Numero Documento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="682cd486-3f4a-4dd5-93e3-7a9b6a23b49f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99944ace-35d7-49fe-8c5a-94ed9400c95e">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>NumeroDocumento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0bfbdf2e-55d9-46f2-8ab1-d264f4bb2be8">
+      <ID>Nome Documento</ID>
+      <Name>Nome Documento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd5e6e77-fc58-4dbb-a52f-f26df03f4c5b">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b20db2e-2566-47db-8c22-903390ac76cc">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>NomeDocumento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcdb4600-f2ef-47a8-a009-e2d82a47b67c">
+      <ID>L Ordem</ID>
+      <Name>LOrdem</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7bc43c90-86a8-4b30-acaf-3619cea73df6">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="60daaf22-1beb-4e3f-896c-7a5d893eb01c">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>LOrdem</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61b1e578-df58-4792-89b6-fac526965087">
+      <ID>Centro Custo</ID>
+      <Name>Centro Custo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b15df1d-e610-4686-bc78-120b80fbaa34">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1296d0a0-aa2e-488d-bd00-abe64b37f777">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>CentroCusto</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3e0cdba7-fd5d-407d-9c66-5f31ff369a0b">
+      <ID>Segmento</ID>
+      <Name>Segmento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3300688a-95c3-4e55-aa18-958fc13de1d2">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4142ef23-7f8a-43fc-a3c8-843cef38ff01">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>Segmento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="315d9c46-7237-452e-9bbd-4fec93d9c3ae">
+      <ID>Tipo</ID>
+      <Name>Tipo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6835d527-cf7a-4246-b7e1-3fff64105399">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30e123e8-a9b7-4bd4-a5ed-a9fbcab83c5a">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>Tipo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="138382d2-aebf-43d5-8787-9dbf058883b8">
+      <ID>Armazem</ID>
+      <Name>Armazem</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="433dc0af-b56b-45e1-9d6a-7b7755cf4c29">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46b482a1-63e2-4c2a-9d47-2cde4069500c">
+            <TableID>dbo_JunkDimFaturacao</TableID>
+            <ColumnID>Armazem</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
